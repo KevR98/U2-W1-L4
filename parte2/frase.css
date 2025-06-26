@@ -8,3 +8,31 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+main {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+#testoAlternato {
+  font-family: 'Bree Serif', serif;
+  border: 2px solid;
+  width: 500px;
+  padding: 2em;
+}
+
+.parole i {
+  color: #6a889c;
+  display: inline-block;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+
+.parola1 {
+  transform: rotate(3turn);
+}
+
+.parole i:nth-child(2),
+.parole i:nth-child(3) {
+  opacity: 0;
+}
