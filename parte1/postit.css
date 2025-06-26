@@ -1,0 +1,87 @@
+header {
+  background-color: #666666;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5em;
+  padding: 2em;
+  flex-wrap: wrap;
+}
+
+.card {
+  font-family: 'Indie Flower', cursive;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 5px black;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  transition: all 0.25s linear 0s;
+}
+
+h1 {
+  margin-bottom: 0em;
+  font-size: 2em;
+}
+
+.card:nth-child(1),
+.card:nth-child(5),
+.card:nth-child(7) {
+  background: #fdfdcb;
+  background: linear-gradient(
+    180deg,
+    rgba(253, 253, 203, 1) 77%,
+    rgba(110, 110, 104, 1) 100%
+  );
+}
+
+.card:nth-child(2),
+.card:nth-child(4),
+.card:nth-child(8) {
+  background: #c8f8ca;
+  background: linear-gradient(
+    180deg,
+    rgba(200, 248, 202, 1) 77%,
+    rgba(126, 150, 126, 1) 100%
+  );
+}
+
+.card:nth-child(3),
+.card:nth-child(6) {
+  background: #c9c9f7;
+  background: linear-gradient(
+    180deg,
+    rgba(201, 201, 247, 1) 77%,
+    rgba(105, 105, 130, 1) 100%
+  );
+}
+
+.card:nth-child(1),
+.card:nth-child(5) {
+  transform: rotate(-5deg);
+}
+
+.card:nth-child(2),
+.card:nth-child(8) {
+  transform: rotate(5deg);
+}
+
+.card:nth-child(3),
+.card:nth-child(6) {
+  transform: rotate(-5deg) translate(-6px);
+}
+
+.card:nth-child(4) {
+  transform: rotate(9deg);
+}
+
+.card:nth-child(7) {
+  transform: rotate(-3deg);
+}
+
+.card:hover {
+  transform: scale(1.2);
+  z-index: 5;
+  box-shadow: 15px 15px 35px black;
+}
