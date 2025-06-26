@@ -87,10 +87,12 @@ main {
     opacity: 1;
     transform: translate(0, 0);
   }
+
   30% {
     opacity: 1;
     transform: translate(0, 0);
   }
+
   40% {
     opacity: 0;
     transform: translate(0, 20px);
