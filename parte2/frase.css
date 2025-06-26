@@ -24,8 +24,8 @@ main {
 .parole {
   position: relative;
   display: inline-block;
-  min-width: 140px; /* scegli in base alle parole più lunghe */
-  height: 1.3em; /* per evitare che il testo sottostante si muova */
+  min-width: 140px;
+  height: 1.3em;
   vertical-align: middle;
 }
 
